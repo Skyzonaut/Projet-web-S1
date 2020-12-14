@@ -1,3 +1,78 @@
-p {
-    color: red;
+body, html {
+    min-height: 100%;
+    min-width: 100%;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    font-size: 1em;
+    font-family: 'Playfair Display', serif;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    display: block;
+}
+
+#page {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-image: url('../res/image/culture/pexels-aleksandar-pasaric-2506923_sombre.jpg');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    background-color: #0F1912;
+    display: inline-block;
+}
+
+.main-content {
+    
+    margin-top: 10vh;
+    padding: 5vw;
+    padding-top: 25vh;
+    height: 65%;
+    display: block;
+}
+
+nav {
+    display: block;
+    height: auto;
+    background-color: rgba(39, 39, 39, 0.1);
+    border-radius: 200px;
+    padding: 1vh;
+    width: auto;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.title-page-link{ 
+    color: rgb(255, 255, 255);
+    height: auto;
+    font-size: 4em;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    font-family: 'Playfair Display', serif;
+    vertical-align: middle;
+    display: flex;
+}
+
+@media (min-width: 1920px), (min-height: 1080px) {
+    #page { background-size: cover; }
+}
+
+footer {
+    font-size: 1em;
+    font-family: 'Playfair Display', serif;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    display: block;
 }
