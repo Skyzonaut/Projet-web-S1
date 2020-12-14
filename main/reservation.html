@@ -9,10 +9,35 @@
         <meta name="author" content="Restaurant - Reservation">
         <link rel="stylesheet" href="res_style.css">
     </head>
-
     <body>
         <div id="page">
-            
+            <!--<h1 class="pageTitle">RÉSERVATION</h1> <br/>-->
+            <form>
+                <h1 class="pageTitle">RÉSERVATION</h1> <br/>
+                <!--<label for="date">Date de réservation</label>-->
+                <input type="date"   id="date"      name="date"      placeholder="Date" required> <br>
+                <input type="text"   id="lastName"  name="lastName"  placeholder="Nom" required> <br>
+                <input type="text"   id="firstName" name="firstName" placeholder="Prénom" required> <br>
+                <input type="tel"    id="tel"       name="tel"       placeholder="Numéro de téléphone" required> <br>
+                <input type="number" id="number"    name="number"    placeholder="Nombre de places" required> <br>
+                <input type="time"   id="time"      name="time"      placeholder="Heure" required> <br>
+                <input type="submit" value="RÉSERVER" style="background-color: #3A322F;"> <br>
+            </form>
         </div>
+        <script>
+            /* get today's date */
+            var date = new Date();
+            var day = date.getDate();
+            var month = date.getMonth() + 1;
+            var year = date.getFullYear();
+
+            if (month < 10) month = "0" + month;
+            if (day < 10) day = "0" + day;
+
+            var today = year + "-" + month + "-" + day;       
+            var time = (date.getHours()+1) + ":" + date.getMinutes() + ":" + date.getSeconds();
+            document.getElementById("date").value = today;
+            document.getElementById("time").value = time;
+        </script>
     </body>
 </html>
