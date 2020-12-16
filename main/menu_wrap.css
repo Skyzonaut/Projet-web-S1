@@ -6,8 +6,7 @@
 */
 
 :root {
-    --primary-color: rgba(13, 110, 139, 0.75);
-    --overlay-color: rgba(34, 34, 34, 0.80);
+    --overlay-color: rgba(34, 34, 34, 0.90);
     --menu-speed: 1.25s;
   }
   
@@ -59,7 +58,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 0.4s ease;
+    transition: all 0.7s ease;
   }
   
   /* Hamburger Lines - Top & Bottom */
@@ -78,7 +77,7 @@
   .menu-wrap .hamburger > div::after {
     top: 10px;
   }
-  
+/*   
   /* Toggler Animation */
   .menu-wrap .toggler:checked + .hamburger > div {
     transform: rotate(135deg);
@@ -91,7 +90,7 @@
     transform: rotate(90deg);
   }
   
-  /* Rotate On Hover When Checked */
+  /* Rotate On Hover When Checked */ */
   .menu-wrap .toggler:checked:hover + .hamburger > div {
     transform: rotate(225deg);
   }
