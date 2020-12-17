@@ -252,11 +252,46 @@ nav {
 
 
 footer {
-    font-size: 1.5vh;
-    width: 100%;
-    height: 10vh;
-    color: white;
-    text-align: center;
-    background-color: rgba(22, 22, 22, 0.3);
-    background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(73, 73, 73, .15));
+
+  font-size: 1.5vh;
+  font-family: 'Playfair Display', serif;
+  left: 0;
+  top: 0;
+  width: 100%;
+  color: white;
+  height: 10vh;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  /* background: linear-gradient(rgba(73, 73, 73, .15), rgba(0, 0, 0, 0.1)); */
+  display: flex;
+  background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(73, 73, 73, .15));
+}
+
+footer > ul {
+  margin: 1vh;
+  text-align: center;
+}
+
+footer > ul > li {
+  list-style: none;
+  color: white;
+  font-size: 2vh;
+  padding: 1vh;
+  display: inline;
+}
+
+footer > ul > li > a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+footer > ul > li > a:hover {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  color: rgb(153, 151, 151);
+  border-bottom: solid 1px rgb(153, 151, 151);
+  transition: .5s;
 }
