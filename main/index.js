@@ -14,11 +14,6 @@ function hideMenuOnClick() {
 }
 
 function onLinkToPresentation(target) {
-    if (target === "top") {
-        document.getElementById("top").scrollIntoView({behavior: 'smooth'});
-    }
-    else {
         document.getElementById(target).scrollIntoView({behavior: 'smooth'});
-    }
     // will scroll to 4th h3 element
   }
