@@ -16,38 +16,24 @@
     <body>
         <div id="page">
             <header id="entete">
-                <div id="footer-menu" class='slide-out'>
+                <div id="header-menu" class='slide-out'>
                     <ul>
-                        <li><a href="#">Présentation</a></li>
-                        <li><a href="#">Galerie</a></li>
+                        <li><a onclick="onLinkToPresentation('top')">Home</a></li>
+                        <li><a onclick="onLinkToPresentation('presentation')">Présentation</a></li>
+                        <li><a href="#Galerie">Galerie</a></li>
+                        <li><a href="#Réseaux">Réseaux</a></li>
                     </ul>
                 </div>
                 <div class="menu-wrap">
                     <input id="toggle" type="checkbox" class="toggler" onClick="hideMenuOnClick()">
                     <div class="hamburger"><div></div></div>
-                    <!--<div class="menu">
-                        <div>
-                            <div>
-                                <p>
-                                    Profitez d’une expérience totalement dépaysante à travers des décors, de la musique, des tenues de serveurs et un menu qui respirent notre culture. 
-                                    Passez la porte de notre restaurant, et entrez dans le Japon d’aujourd’hui (cinéma, littérature, artistes comme Yayoi Kusama ou Takashi Murakami) et de la pop culture (mangas, Japanese pop, délires kawaï)… 
-
-                                    À côté des plats les plus caractéristiques de la culture nippone, nous proposons de la restauration plus légère, plus ludique et plus mode – comme les bubble teas extravagants qu’on sirote dans le quartier d’Harajuku, à Tokyo. 
-                                    Udon et autres Soba y sont aussi de mise. Nous vous attendons avec impatience ! 
-
-                                </p>
-                                <ul>
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#">About</a></li>
-                                    <li><a href="#">Services</a></li>
-                                    <li><a href="#">Contact</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>-->
                 </div>
             </header>   
             <div class="main-content">
+                <div id="top"></div>
+                <div id="adress">
+                    19 avenue Victoria, 75001 Paris
+                </div>
                 <nav>
                     <div class="title-page-link" id="event-title">
                         <a>Evènements<br>エベント</a>
@@ -59,11 +45,20 @@
                         <a href="./menu.html">Restauration<br>料理</a>
                     </div>
                 </nav>
+                <div id="presentation">
+                    <p>
+                        Profitez d’une expérience totalement dépaysante à travers des décors, de la musique, des tenues de serveurs et un menu qui respirent notre culture. 
+                        Passez la porte de notre restaurant, et entrez dans le Japon d’aujourd’hui (cinéma, littérature, artistes comme Yayoi Kusama ou Takashi Murakami) et de la pop culture (mangas, Japanese pop, délires kawaï)… 
+
+                        À côté des plats les plus caractéristiques de la culture nippone, nous proposons de la restauration plus légère, plus ludique et plus mode – comme les bubble teas extravagants qu’on sirote dans le quartier d’Harajuku, à Tokyo. 
+                        Udon et autres Soba y sont aussi de mise. Nous vous attendons avec impatience ! 
+                    </p>
+                </div>
             </div>
             <footer id="bas-de-page">
-                <ul>
+                <!--<ul>
                     <li><a href="#">Réseaux</a></li>
-                </ul>
+                </ul>-->
             </footer>
         </div>
     </body>
