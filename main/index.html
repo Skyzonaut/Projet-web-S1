@@ -7,7 +7,8 @@
         <meta name="description" content="Quartier Lointain">
         <meta name="author" content="Accueil Quartier Lointain">
         <script src="index.js"></script>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="header.css">
         <!--<link rel="stylesheet" href="menu_wrap.css">-->
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
@@ -19,10 +20,9 @@
             <header id="entete">
                 <div id="header-menu" class='slide-out'>
                     <ul>
-                        <li><a onclick="onLinkToPresentation('top')">Home</a></li>
+                        <li><a onclick="onLinkToPresentation('home')">Home</a></li>
                         <li><a onclick="onLinkToPresentation('presentation')">Présentation</a></li>
                         <li><a href="./galerie.html">Galerie</a></li>
-                        <li><a href="#Réseaux">Réseaux</a></li>
                     </ul>
                 </div>
                 <div class="menu-wrap">
@@ -31,9 +31,9 @@
                 </div>
             </header>   
             <div class="main-content">
-                <div id="top"></div>
+                <div id="home"></div>
                 <div id="adress">
-                    19 avenue Victoria, 75001 Paris
+                    19 Avenue Victoria, 1e Arrondisement, 75001 Paris
                 </div>
                 <nav>
                     <div class="title-page-link" id="event-title">
@@ -56,10 +56,14 @@
                     </p>
                 </div>
             </div>
-            <footer id="bas-de-page">
-                <!--<ul>
-                    <li><a href="#">Réseaux</a></li>
-                </ul>-->
+            <footer>
+                <!--<p>CONTACT</p>-->
+                <ul>
+                    <i class="fa fa-envelope"></i>
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                </ul>
             </footer>
         </div>
     </body>

@@ -1,0 +1,194 @@
+:root {
+  --overlay-color: rgba(34, 34, 34, 0.90);
+  --menu-speed: 1.25s;
+}
+
+body, html {
+  min-height: 100%;
+  min-width: 100%;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  scroll-behavior: smooth;
+}
+
+#bg-image {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.25),
+    rgba(0, 0, 0, 0.25)
+    ), url('../res/image/culture/pexels-aleksandar-pasaric-2506923_sombre.jpg');
+  filter: blur(.09vw); 
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  z-index: -1;
+  background-size: cover;
+}
+
+#page {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  overflow-y: scroll;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+.main-content {
+  padding: 5vw;
+  height: 100%;
+  display: block;
+  /* background-color: rgba(0, 0, 0, 0.1); */
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.main-content > #adress {
+  color: rgb(255, 255, 255);
+  font-size: 1.5vw;
+  margin-top: 25vh;
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+  height: fit-content;
+  letter-spacing: .2vw;
+}
+
+#top {
+  position: relative;
+  top: 0px;
+}
+
+nav {
+  padding: 1vh;
+  justify-content: space-between;
+  align-items: center;
+  /* backdrop-filter: blur(.08vh); */
+  border-radius: 100px;
+  display: flex;
+}
+
+.title-page-link{ 
+  color: rgb(255, 255, 255);
+  height: auto;
+  font-size: 3.5vw;
+  letter-spacing: .1vw;
+  text-shadow: 8px 8px 8px 8px #000;
+  vertical-align: middle;
+  text-align: center;
+  display: flex;
+  cursor: pointer;
+}
+
+.title-page-link a:link{
+    text-decoration: None;
+    color: inherit;
+}
+
+.title-page-link a:active{
+    text-decoration: None;
+    color: inherit;
+}
+
+.title-page-link a:visited{
+    text-decoration: None;
+    color: inherit;
+}
+
+.title-page-link a:hover{
+    color: rgb(167, 164, 164);
+    border-bottom: solid 1px rgb(185, 184, 184);
+    transition: .5s;
+}
+
+@media (min-width: 1920px), (min-height: 1080px) {
+    #page { background-size: cover; }
+}
+
+#presentation {
+  color: rgb(255, 255, 255);
+  position: relative;
+  top: 1000px;
+  height: auto;
+  text-shadow: 19px 14px 30px rgba(0, 0, 0, 1);
+  font-size: 2vw;
+  line-height: 5vh;
+  letter-spacing: .1vw;
+  height: 92%;
+}
+
+#presentation > p {
+  padding: 3vh;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  /* backdrop-filter: brightness(.6); */
+  border-radius: 15vh;
+  text-align: center;
+  backdrop-filter: blur(.2vh);
+  text-shadow: 2px 2px 2px rgba(206,89,55,0);
+}
+
+footer {
+  font-family: 'Playfair Display', serif;
+  font-size: 3vh;
+  text-align: center;
+  color: white;
+  position: fixed;
+  padding: 0px 0px 1%;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  bottom: 0;
+}
+
+footer ul {
+  display: inline-block;
+  padding: 2vh 2vh 1vh;
+  border-top: 1px solid white;
+}
+
+.fa, .fab {
+  padding: 2vh;
+  font-size: 4vh;
+  width: 5vh;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover, .fab:hover {
+  opacity: 0.7;
+}
+
+
+@media screen and (orientation: portrait) {
+  .pageTitle {
+      font-size: 5vh;
+  }
+  form {
+      width: 75%;
+  }
+  footer {
+      font-size: 4vh;
+  }
+  footer ul {
+      display: inline-block;
+      padding: 1vh 1vh 0.5vh;
+      border-top: 1px solid white;
+  }
+  form input {
+      border-radius: 10px;
+      font-size: 2.5vh;
+  }
+}
+
