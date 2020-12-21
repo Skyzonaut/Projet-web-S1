@@ -131,7 +131,7 @@ header {
     text-align: center;
     align-items: center;
     justify-content: space-between;
-    background: linear-gradient(rgba(73, 73, 73, .15), rgba(0, 0, 0, 0.1));
+    background: linear-gradient(rgba(73, 73, 73, .15), rgba(0, 0, 0, 0.05));
     display: flex;
 }
 
@@ -315,7 +315,7 @@ footer {
   align-items: center;
   justify-content: space-between;
   display: flex;
-  background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(73, 73, 73, .15));
+  background: linear-gradient( rgba(0, 0, 0, 0.02), rgba(73, 73, 73, .25));
 }
 
 footer > ul {
