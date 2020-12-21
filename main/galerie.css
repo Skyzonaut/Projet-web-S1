@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
 :root {
     --overlay-color: rgba(34, 34, 34, 0.90);
     --menu-speed: 1.25s;
@@ -207,7 +212,56 @@ header > #header-menu > ul > li > a:hover {
     
 }
 
-/* #i4 {
-    background-color: blue;
-    
-}  */ 
+footer {
+  font-family: 'Playfair Display', serif;
+  font-size: 3vh;
+  text-align: center;
+  color: white;
+  position: fixed;
+  padding: 0px 0px 1%;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  bottom: 0;
+}
+
+footer ul {
+  display: inline-block;
+  padding: 2vh 2vh 1vh;
+  border-top: 1px solid white;
+}
+
+.fa, .fab {
+  padding: 2vh;
+  font-size: 4vh;
+  width: 5vh;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover, .fab:hover {
+  opacity: 0.7;
+}
+
+
+@media screen and (orientation: portrait) {
+  .pageTitle {
+      font-size: 5vh;
+  }
+  form {
+      width: 75%;
+  }
+  footer {
+      font-size: 4vh;
+  }
+  footer ul {
+      display: inline-block;
+      padding: 1vh 1vh 0.5vh;
+      border-top: 1px solid white;
+  }
+  form input {
+      border-radius: 10px;
+      font-size: 2.5vh;
+  }
+}
