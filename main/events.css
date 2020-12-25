@@ -1,0 +1,38 @@
+html
+{
+    background: url(pic.jpg) no-repeat center fixed;
+    background-size: contain;
+}
+body
+{
+    text-align: center;
+}
+a
+{
+    text-decoration: none;
+    color: black;
+}
+.b1
+{
+    display: inline-block;
+    font-size: 30px;
+    margin: 45% 50px 20px 50px;
+}
+.b2
+{
+    display: inline-block;
+    font-size: 30px;
+    margin: 20px 50px 40% 50px;
+}
+div{
+    background-color: white;
+    padding: 15px;
+    font-variant: small-caps;
+}
+
+
+
+
+
+
+
