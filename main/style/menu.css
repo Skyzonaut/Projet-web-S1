@@ -10,7 +10,7 @@ body {
     height: 100%;
     width: 100%;
     position: absolute;
-    background-image: url('../res/image/food/sushi-sushi-rolly-vassabi-sous-imbir-set-japanese-food-pal-5.jpg');
+    background-image: url('../../res/image/food/sushi-sushi-rolly-vassabi-sous-imbir-set-japanese-food-pal-5.jpg');
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: cover;
