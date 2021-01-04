@@ -1,7 +1,6 @@
 body, html {
     min-height: 100%;
     min-width: 100%;
-    overflow: hidden;
     padding: 0;
     margin: 0;
 }
@@ -10,59 +9,64 @@ body {
     height: 100%;
     width: 100%;
     position: absolute;
-    background-image: url('../../res/image/food/sushi-sushi-rolly-vassabi-sous-imbir-set-japanese-food-pal-5.jpg');
+    background-image: url('../res/image/food/sushi-sushi-rolly-vassabi-sous-imbir-set-japanese-food-pal-5.jpg');
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: cover;
+    color: white;
 }
 
-pp {
-    color: white
+#page {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 8vw;
+    height: 100%;
+    border: solid 1px green;
 }
 
 h1 {
     text-align:center;
 }
 
-h2 {
-    margin-left: 300px ;
-}
-
-h3 {
-    border: 1px solid white
-}
-
-#title {
+.specialite{
     display: flex;
-    justify-content: space-between;
-    border: 1px solid white;
+    flex-direction: column;
+    width: 30vw;
+    border: solid 1px red;
 }
 
-#okonomiyaki {
-    margin-left: 300px;
-    font-size: 25px;
-    background-color: rgba(247,246,246,0.2);
-    padding: 10px;
+.specialite-title {
+    font-size: 2vw;
+    width: 100%;
+    text-align:center;
+    background-color : rgba(255,255,255,.3);
+    border: solid 1px blue;
 }
-
-#soba {
-    margin-right: 300px;
-    font-size: 25px;
-    background-color: rgba(247,246,246,0.2);
-    padding: 10px;
-    padding-left: 70px;
-    padding-right: 70px;
-    
-}
-
-#details {
-    display: flex;
-    justify-content: space-between;
-    border: 1px solid white;
-}
-
-#oko {
-    margin-left: 300px;
+.specialite-menu {
+    text-align: center;
+    width: 100%;
+    border: solid 1px white;
 
 }
+
+.specialite-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.specialite-menu li {
+    padding: 1vw;
+}
+
+
+
 
