@@ -78,18 +78,18 @@
     transform: rotate(90deg);
   }
 
-  header {
-    font-size: 1.5vh;
-    font-family: 'Playfair Display', serif;
-    left: 0;
-    top: 0;
-    width: 100%;
-    color: white;
-    height: 10vh;
-    text-align: center;
-    align-items: center;
-    justify-content: space-between;
-    display: flex;
+header {
+  font-size: 1.5vh;
+  font-family: 'Playfair Display', serif;
+  left: 0;
+  top: 0;
+  width: 100%;
+  color: white;
+  height: 10vh;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
 }
 
 header > #header-menu {

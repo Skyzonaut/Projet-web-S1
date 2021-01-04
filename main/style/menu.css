@@ -1,70 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+:root {
+  --overlay-color: rgba(34, 34, 34, 0.90);
+  --menu-speed: 1.25s;
+}
+
 body, html {
-    min-height: 100%;
-    min-width: 100%;
-    overflow: hidden;
-    padding: 0;
-    margin: 0;
-    font-family: 'Playfair Display', serif;
-    scroll-behavior: smooth;
-    color: white;
-  }
+  min-height: 100%;
+  min-width: 100%;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  scroll-behavior: smooth;
+  color: white
+}
 
 #bg-image {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    background-image: linear-gradient(
-      rgba(0, 0, 0, 0.25),
-      rgba(0, 0, 0, 0.25)
-      ), url('../../res/image/food/sushi-sushi-rolly-vassabi-sous-imbir-set-japanese-food-pal-5.jpg');
-    filter: blur(.09vw); 
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    z-index: -1;
-    background-size: cover;
-  }
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.25),
+    rgba(0, 0, 0, 0.25)
+    ), url('../../res/image/food/sushi-sushi-rolly-vassabi-sous-imbir-set-japanese-food-pal-5.jpg');
+  filter: blur(.09vw); 
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  z-index: -1;
+  background-size: cover;
+}
 
 #page {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-}
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+  }
+
+
+/* #bg-image {
+height: 100%;
+width: 100%;
+position: absolute;
+background-image: linear-gradient(
+    rgba(0, 0, 0, 0.25),
+    rgba(0, 0, 0, 0.25)
+    ), url('../../res/image/food/sushi-sushi-rolly-vassabi-sous-imbir-set-japanese-food-pal-5.jpg');
+filter: blur(.09vw); 
+background-repeat: no-repeat;
+background-position: 0 0;
+z-index: -1;
+background-size: cover;
+} */
+
 
 header {
     background: linear-gradient(rgba(73, 73, 73, .15), rgba(0, 0, 0, 0.05));
+    height: 8vh;
+}
+
+#page-title {
+    text-align: center;
+}
+
+#carte {
+    padding: 1vh;
+    /* background-color: rgba(0, 0, 0, 0.1); */
+    /* scrollbar-width: none; */
+    overflow: scroll;
+    display: flex;
+    height: 80vh;
+    flex-direction: column;
 }
 
 .menu {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 8vw;
-    height: 100%;
-    border: solid 1px green;
-}
-
-h1 {
-    text-align:center;
+    padding: 5vw;
 }
 
 .specialite{
     display: flex;
     flex-direction: column;
     width: 30vw;
-    border: solid 1px red;
 }
 
 .specialite-title {
     font-size: 2vw;
-    width: 100%;
-    text-align:center;
-    background-color : rgba(255,255,255,.3);
-    border: solid 1px blue;
+    text-align: center;
+    background-color: rgba(255,255,255,.3);
+    border: solid 1px grey;
 }
 .specialite-menu {
     text-align: center;
-    width: 100%;
     border: solid 1px white;
 
 }
