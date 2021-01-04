@@ -18,6 +18,10 @@ body, html {
   scroll-behavior: smooth;
 }
 
+header {
+  background: linear-gradient(rgba(73, 73, 73, .15), rgba(0, 0, 0, 0.05));
+}
+
 #bg-image {
   height: 100%;
   width: 100%;
@@ -61,7 +65,7 @@ body, html {
 .main-content > #adress {
   color: rgb(255, 255, 255);
   font-size: 1.5vw;
-  margin-top: 28vh;
+  margin-top: 23vh;
   text-align: center;
   font-style: italic;
   font-weight: bold;
