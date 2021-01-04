@@ -261,7 +261,7 @@ header > #header-menu > ul > li > a:hover {
 }
 
 #galery > .galery-item > .galery-item-img {
-  background-size: contain;
+  background-size: cover;
   border: solid rgb(32, 32, 32) 3px;
   width: 50vw;
   height: 95%;
