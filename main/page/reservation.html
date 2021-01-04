@@ -1,0 +1,74 @@
+
+<!doctype html>
+
+<html lang="fr">
+    <head>
+        <script src="https://kit.fontawesome.com/637ef64a3c.js" crossorigin="anonymous"></script>
+        <meta charset="utf-8">
+        <title>Quartier Lointain</title>
+        <meta name="description" content="Quartier Lointain">
+        <meta name="author" content="Restaurant - Reservation">
+        <script src="../script/index.js"></script>
+        <link rel="stylesheet" href="../style/res_style.css">
+        <!--<link rel="stylesheet" href="menu_wrap.css">-->
+    </head>
+    <body>
+        <div id="page">
+            <header id="entete">
+                <div id="header-menu" class='slide-out'>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./galerie.html">Galerie</a></li>
+                        <li><a href="./index.html#Réseaux">Réseaux</a></li>
+                    </ul>
+                </div>
+                <div class="menu-wrap">
+                    <input id="toggle" type="checkbox" class="toggler" onClick="hideMenuOnClick()">
+                    <div class="hamburger"><div></div></div>
+                </div>
+            </header>   
+            <h1 class="pageTitle">RÉSERVATION</h1> <br/>
+            <form>
+                <!--<label for="date">Date de réservation</label>-->
+                <input type="date"   id="date"      name="date"      placeholder="Date" required> <br>
+                <input type="text"   id="lastName"  name="lastName"  placeholder="Nom" required> <br>
+                <input type="text"   id="firstName" name="firstName" placeholder="Prénom" required> <br>
+                <input type="tel"    id="tel"       name="tel"       placeholder="Numéro de téléphone" required> <br>
+                <input type="number" id="number"    name="number"    placeholder="Nombre de places" required> <br>
+                <input type="time"   id="time"      name="time"      placeholder="Heure" required> <br>
+                <input type="submit" value="RÉSERVER" style="background-color: #65012B;"> <br>
+            </form>
+            <footer>
+                <!--<p>CONTACT</p>-->
+                <ul>
+                    <i class="fa fa-envelope"></i>
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                </ul>
+            </footer>
+        </div>
+        <script>
+            /* get today's date */
+            var date = new Date();
+            var day = date.getDate();
+            var month = date.getMonth() + 1;
+            var year = date.getFullYear();
+
+            if (month < 10) month = "0" + month;
+            if (day < 10) day = "0" + day;
+
+            var today = year + "-" + month + "-" + day;
+            
+            var hours   = date.getHours() + 1;
+            var minutes = date.getMinutes();
+            var seconds = date.getSeconds();
+            if (minutes < 10) minutes = "0" + minutes;
+            if (seconds < 10) seconds = "0" + seconds;
+            if (hours < 10) hours = "0" + hours;       
+            var time = hours + ":" + minutes + ":" + seconds;
+            document.getElementById("date").value = today;
+            document.getElementById("time").value = time;
+        </script>
+    </body>
+</html>

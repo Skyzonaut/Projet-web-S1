@@ -1,0 +1,68 @@
+body, html {
+    min-height: 100%;
+    min-width: 100%;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-image: url('../../res/image/food/sushi-sushi-rolly-vassabi-sous-imbir-set-japanese-food-pal-5.jpg');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+}
+
+pp {
+    color: white
+}
+
+h1 {
+    text-align:center;
+}
+
+h2 {
+    margin-left: 300px ;
+}
+
+h3 {
+    border: 1px solid white
+}
+
+#title {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid white;
+}
+
+#okonomiyaki {
+    margin-left: 300px;
+    font-size: 25px;
+    background-color: rgba(247,246,246,0.2);
+    padding: 10px;
+}
+
+#soba {
+    margin-right: 300px;
+    font-size: 25px;
+    background-color: rgba(247,246,246,0.2);
+    padding: 10px;
+    padding-left: 70px;
+    padding-right: 70px;
+    
+}
+
+#details {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid white;
+}
+
+#oko {
+    margin-left: 300px;
+
+}
+

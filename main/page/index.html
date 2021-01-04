@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Quartier Lointain</title>
+        <meta name="description" content="Quartier Lointain">
+        <meta name="author" content="Accueil Quartier Lointain">
+        <script src="https://kit.fontawesome.com/637ef64a3c.js" crossorigin="anonymous"></script>
+        <script src="../script/index.js"></script>
+        <link rel="stylesheet" href="../style/index.css">
+        <link rel="stylesheet" href="../style/header.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div id="bg-image"></div>
+        <div id="page">
+            <header id="entete">
+                <div id="header-menu" class='slide-out'>
+                    <ul>
+                        <li><a onclick="onLinkToPresentation('home')">Home</a></li>
+                        <li><a onclick="onLinkToPresentation('presentation')">Présentation</a></li>
+                        <li><a href="./galerie.html">Galerie</a></li>
+                    </ul>
+                </div>
+                <div class="menu-wrap">
+                    <input id="toggle" type="checkbox" class="toggler" onClick="hideMenuOnClick()">
+                    <div class="hamburger"><div></div></div>
+                </div>
+            </header>   
+            <div class="main-content">
+                <div id="home"></div>
+                <div id="adress">
+                    19 Avenue Victoria, 1e Arrondisement, 75001 Paris
+                </div>
+                <nav>
+                    <div class="title-page-link" id="event-title">
+                        <a href="./events.html">EVÈNEMENTS<br>エベント</a>
+                    </div>
+                    <div class="title-page-link" id="reservation-title">
+                        <a href="./reservation.html">RÉSERVATION<br>リザベーション</a>
+                    </div>
+                    <div class="title-page-link" id="restauration-title">
+                        <a href="./menu.html">RESTAURATION<br>料理</a>
+                    </div>
+                </nav>
+                <div id="presentation">
+                    <p>
+                        Profitez d’une expérience totalement dépaysante à travers des décors, de la musique, des tenues de serveurs et un menu qui respirent notre culture. 
+                        Passez la porte de notre restaurant, et entrez dans le Japon d’aujourd’hui (cinéma, littérature, artistes comme Yayoi Kusama ou Takashi Murakami) et de la pop culture (mangas, Japanese pop, délires kawaï)… 
+
+                        À côté des plats les plus caractéristiques de la culture nippone, nous proposons de la restauration plus légère, plus ludique et plus mode – comme les bubble teas extravagants qu’on sirote dans le quartier d’Harajuku, à Tokyo. 
+                        Udon et autres Soba y sont aussi de mise. Nous vous attendons avec impatience ! 
+                    </p>
+                </div>
+            </div>
+            <footer>
+                <!--<p>CONTACT</p>-->
+                <ul>
+                    <i class="fa fa-envelope"></i>
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                </ul>
+            </footer>
+        </div>
+    </body>
+</html>
