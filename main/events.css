@@ -1,12 +1,13 @@
 
 body, html {
-    background: url("../res/image/event/pic.jpg") no-repeat center fixed;
+    background: url("/home/melissa/Site web S1/res/image/event/eventbackground.jpg") no-repeat center fixed;
     background-size: cover;
     text-align: center;
     height: 100%;
     width: auto;
 
 }
+
 
 #nav-container {
     height: inherit;
@@ -21,20 +22,26 @@ nav {
     justify-content: space-around;
 }
 
-
 .link-page-event {
-    background-color: red;
     padding: 5vh;
     background-size: cover;
 }
-
+p {
+    color: white;
+    font-family: fantasy;
+    font-size: 3vh;
+    margin: 0;
+}
 .link-page-event:hover {
-    background-color: blue;
+    
 }
 
 a {
     text-decoration: none;
     color: white;
+    font-variant: small-caps;
+    font-family: Didot, serif;
+    font-size: 5vh;
 }
 
 
