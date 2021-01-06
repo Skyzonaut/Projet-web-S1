@@ -18,6 +18,10 @@ body, html {
   scroll-behavior: smooth;
 }
 
+header {
+  background: linear-gradient(rgba(73, 73, 73, .15), rgba(0, 0, 0, 0.05));
+}
+
 #bg-image {
   height: 100%;
   width: 100%;
@@ -57,20 +61,31 @@ body, html {
   overflow-y: scroll;
   scrollbar-width: none;
 }
+.main-content > #page-title {
+  color: rgb(255, 255, 255);
+  font-size: 4vh;
+  text-align: center;
+  margin-top: 12vh;
+  margin-bottom: 6vh;
+  height: fit-content;
+  letter-spacing: .2vh;
+}
 
 .main-content > #adress {
   color: rgb(255, 255, 255);
-  font-size: 1.5vw;
-  margin-top: 28vh;
+  font-size: 1.5vh;
   text-align: center;
   font-style: italic;
   font-weight: bold;
   height: fit-content;
-  letter-spacing: .2vw;
+  letter-spacing: .2vh;
 }
 
-#top {
+#home {
   position: relative;
+  color: white;
+  text-align: center;
+  font-size: 5vh;
   top: 0px;
 }
 
@@ -86,8 +101,8 @@ nav {
 .title-page-link{ 
   color: rgb(255, 255, 255);
   height: auto;
-  font-size: 3.5vw;
-  letter-spacing: .1vw;
+  font-size: 5vh;
+  letter-spacing: .1vh;
   text-shadow: 8px 8px 8px 8px #000;
   vertical-align: middle;
   text-align: center;
@@ -126,10 +141,10 @@ nav {
   top: 1000px;
   height: auto;
   text-shadow: 19px 14px 30px rgba(0, 0, 0, 1);
-  font-size: 2vw;
+  font-size: 3.5vh;
   line-height: 5vh;
   letter-spacing: .1vw;
-  height: 92%;
+  height: 100%;
 }
 
 #presentation > p {
@@ -178,6 +193,10 @@ footer ul {
 @media screen and (orientation: portrait) {
   .pageTitle {
       font-size: 5vh;
+  }
+
+  nav { 
+    flex-direction: column;
   }
   footer {
       font-size: 4vh;
