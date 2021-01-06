@@ -64,13 +64,13 @@ header {
 
 .main-content > #adress {
   color: rgb(255, 255, 255);
-  font-size: 1.5vw;
+  font-size: 1.5vh;
   margin-top: 22vh;
   text-align: center;
   font-style: italic;
   font-weight: bold;
   height: fit-content;
-  letter-spacing: .2vw;
+  letter-spacing: .2vh;
 }
 
 #top {
@@ -90,8 +90,8 @@ nav {
 .title-page-link{ 
   color: rgb(255, 255, 255);
   height: auto;
-  font-size: 3.5vw;
-  letter-spacing: .1vw;
+  font-size: 5vh;
+  letter-spacing: .1vh;
   text-shadow: 8px 8px 8px 8px #000;
   vertical-align: middle;
   text-align: center;
@@ -130,7 +130,7 @@ nav {
   top: 1000px;
   height: auto;
   text-shadow: 19px 14px 30px rgba(0, 0, 0, 1);
-  font-size: 2vw;
+  font-size: 3.5vh;
   line-height: 5vh;
   letter-spacing: .1vw;
   height: 100%;
