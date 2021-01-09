@@ -24,8 +24,8 @@ body, html {
   width: 100%;
   position: absolute;
   background-image: linear-gradient(
-    rgba(0, 0, 0, 0.3),
-    rgba(0, 0, 0, 0.3)
+    rgba(0, 0, 0, 0.15),
+    rgba(0, 0, 0, 0.15)
     ), url('../../res/image/culture/lex-joosen-concept-art-final.jpg');
   filter: blur(.1vw); 
   background-repeat: no-repeat;

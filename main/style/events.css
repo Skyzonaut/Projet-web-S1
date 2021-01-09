@@ -1,10 +1,6 @@
 
 body, html {
-<<<<<<< HEAD:main/events.css
-    background: url("/home/melissa/Site web S1/res/image/event/eventbackground.jpg") no-repeat center fixed;
-=======
-    background: url("../../res/image/event/pic.jpg") no-repeat center fixed;
->>>>>>> e2472b4f7d024562d50f768ed01df550aee8162d:main/style/events.css
+    background: url("../../res/image/event/eventbackground.jpg") no-repeat center fixed;
     background-size: cover;
     text-align: center;
     height: 100%;
