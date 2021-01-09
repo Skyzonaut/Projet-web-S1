@@ -3,39 +3,73 @@
     <head>
         <meta charset="utf-8"/>
         <title>Évènements</title>
+        <script src="https://kit.fontawesome.com/637ef64a3c.js" crossorigin="anonymous"></script>
+        <script src="../script/index.js"></script>
         <link rel="stylesheet" href="../style/events.css"/>
+        <link rel="stylesheet" href="../style/header.css"/>
     </head>
     <body>
+        <div id="bg-image"></div>
+        <header id="entete">
+            <div id="header-menu" class='slide-out'>
+                <ul>
+                    <li><a href="./index.html#home">Home</a></li>
+                    <li><a href="./reservation.html">Réservation</a></li>
+                    <li><a href="./menu.html">Restaurant</a></li>
+                    <li><a href="./galerie.html">Galerie</a></li>
+                </ul>
+            </div>
+            <div class="menu-wrap">
+                <input id="toggle" type="checkbox" class="toggler" onClick="hideMenuOnClick()">
+                <div class="hamburger"><div></div></div>
+            </div>
+        </header>  
+        <div id="page-title"><span>Évènements・エベント</span></div>
         <div id="nav-container">
-            <nav>
-                <div class="link-page-event"><a href="#">Concerts </br> コンサート </a>
-                <p>21/12 </br> 7:00 pm</p>
-                </div>
-                <div class="link-page-event"><a href="#">Atelier Cosplay </br> コスプレワークショップ </a>
-                <p>29/12 </br> 10:00 am</p>
-                </div>
-                <div class="link-page-event"><a href="#">Manga Rassemblement </br> マンガギャザリング </a>
-                <p>27/12 </br> 2:30 am</p>
-                </div>
-            </nav>
-            <nav>
-                <div class="link-page-event"><a href="#">Kabuki Représentation </br> 歌舞伎 </a>
-                <p>23/12</br>8:00 pm</a>
-                </div>
-                <div class="link-page-event"><a href="#">Karaoke </br> カラオケ </a>
-                <p> 28/12 </br>7:00 pm</p>
-                </div>
-                <div class="link-page-event"><a href="#">Soirée Nouvel An </br> 新年会 </a>
-                <p>31/12 </br> 8:00 pm</p>
-                </div>
-            </nav>
+            <div class="nav-container-column">
+                <nav>
+                    <div class="link-page-event">
+                        <a href="./galerie.html#concerts">Concerts </br> コンサート </a>
+                        <p>21/12 </br> 19:00</p>
+                    </div>
+                    <div class="link-page-event">
+                        <a href="./galerie.html#theatre">Kabuki Représentation </br> 歌舞伎 </a>
+                        <p>23/12</br>20:00</a>
+                    </div>
+                </nav>
+            </div>
+            <div class="nav-container-column">
+                <nav>
+                    <div class="link-page-event">
+                        <a href="./galerie.html#cosplay">Atelier Cosplay </br> コスプレワークショップ </a>
+                        <p>29/12 </br> 10:00</p>
+                    </div>
+                    <div class="link-page-event" id="karaoke">
+                        <a href="./galerie.html#karaoke">Karaoke </br> カラオケ </a>
+                        <p> 28/12 </br>19:00</p>
+                    </div>
+                </nav>
+            </div>
+            <div class="nav-container-column">
+                <nav>
+                    <div class="link-page-event">
+                        <a href="./galerie.html#city-culture">Soirée Nouvel An </br> 新年会 </a>
+                        <p>31/12 </br> 20:00</p>
+                    </div>
+                    <div class="link-page-event">
+                        <a href="./galerie.html#rassemblement">Manga Rassemblement </br> マンガ大会 </a>
+                        <p>27/12 </br> 14:30</p>
+                    </div>
+                </nav>
+            </div>
         </div>
+        <footer>
+            <ul>
+                <i class="fa fa-envelope"></i>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+            </ul>
+        </footer>
     </body>
-    <!-- <div id="link-page-event"><a href="concert.html"  class="r1">Concert</a></div>
-    <div id="link-page-event"><a href="cosplay.html" class="r1">Atelier Cosplay</a></div>
-    <div id="link-page-event"><a href="manga.html" class="r1">Manga</a></div></br> 
-    <div id="link-page-event"><a href="kabuki.html" class="r2">Kabuki</a></div>
-    <div id="link-page-event"><a href="soiree.html" class="r2">Soirée Nouvel An</a></div>
-    <div id="link-page-event"><a href="karaoke.html" class="r2">Karaoke</a></div>-->
-
 </html>

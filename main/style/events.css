@@ -1,48 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+:root {
+  --overlay-color: rgba(34, 34, 34, 0.90);
+  --menu-speed: 1.25s;
+}
 
 body, html {
-    background: url("../../res/image/event/eventbackground.jpg") no-repeat center fixed;
-    background-size: cover;
+    min-height: 100%;
+    min-width: 100%;
     text-align: center;
-    height: 100%;
-    width: auto;
+    font-family: 'Playfair Display', serif;
+    scroll-behavior: smooth;
+    color: white;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
 
+#bg-image {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+      ), url('../../res/image/event/eventbackground.jpg');
+    filter: blur(.1vw); 
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    z-index: -1;
+    
+    background-size: cover;
+  }
+
+  
+header {
+    background: linear-gradient(rgba(73, 73, 73, .15), rgba(0, 0, 0, 0.05));
+    height: 8vh;
 }
 
 
+#page-title {
+    font-size: 5vh;
+    font-weight: bold;
+    text-align: center;
+    margin-top:3vh;
+  }
+
+#page-title span {
+    padding: 2vh;
+
+}
+
 #nav-container {
+    margin-top: 5vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    margin-bottom: 1vh;
     height: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1vw;
+}
+
+.nav-container-column {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-nav { 
-    margin-bottom: 15vh;
-    display: flex;
-    justify-content: space-around;
-}
-
 .link-page-event {
-    padding: 5vh;
+    padding: 3vh;
     background-size: cover;
-}
-p {
-    color: white;
-    font-family: fantasy;
-    font-size: 3vh;
-    margin: 0;
-}
-.link-page-event:hover {
     
 }
 
-a {
+.link-page-event:hover {
+    background-color: rgba(185, 184, 184, .15);
+    transition: .5s;
+    
+}
+
+.link-page-event p {
+    color: white;
+    font-size: 4vh;
+    margin: 0;
+}
+.link-page-event a:hover {
+    color: rgb(231, 231, 231);
+    border-bottom: solid 1px rgb(185, 184, 184);
+    transition: .5s;
+}
+
+.link-page-event a {
     text-decoration: none;
     color: white;
-    font-variant: small-caps;
-    font-family: Didot, serif;
-    font-size: 5vh;
+    font-size: 4vh;
+    letter-spacing: .1vh;
+    text-shadow: 8px 8px 8px 8px #000;
+    vertical-align: middle;
+    /* text-align: center; */
 }
+
+footer {
+    font-family: 'Playfair Display', serif;
+    font-size: 1vh;
+    text-align: center;
+    color: white;
+    position: fixed;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    bottom: 0;
+  }
+  
+  footer ul {
+    display: inline-block;
+    padding: 2vh 2vh 1vh;
+    border-top: 1px solid white;
+  }
+  
+  .fa, .fab {
+    padding: 2vh;
+    font-size: 4vh;
+    width: 5vh;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover, .fab:hover {
+    opacity: 0.7;
+  }
 
 
 @media screen and (orientation: portrait) {
