@@ -1,0 +1,74 @@
+
+body, html {
+    background: url("/home/melissa/Site web S1/res/image/event/eventbackground.jpg") no-repeat center fixed;
+    background-size: cover;
+    text-align: center;
+    height: 100%;
+    width: auto;
+
+}
+
+
+#nav-container {
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+nav { 
+    margin-bottom: 15vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.link-page-event {
+    padding: 5vh;
+    background-size: cover;
+}
+p {
+    color: white;
+    font-family: fantasy;
+    font-size: 3vh;
+    margin: 0;
+}
+.link-page-event:hover {
+    
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-variant: small-caps;
+    font-family: Didot, serif;
+    font-size: 5vh;
+}
+
+
+@media screen and (orientation: portrait) {
+    .pageTitle {
+        font-size: 5vh;
+    }
+    form {
+        width: 75%;
+    }
+    footer {
+        font-size: 4vh;
+    }
+    footer ul {
+        display: inline-block;
+        padding: 1vh 1vh 0.5vh;
+        border-top: 1px solid white;
+    }
+    form input {
+        border-radius: 10px;
+        font-size: 2.5vh;
+    }
+  }
+  
+
+
+
+
+
+
