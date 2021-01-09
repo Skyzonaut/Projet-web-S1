@@ -24,13 +24,14 @@ body, html {
   width: 100%;
   position: absolute;
   background-image: linear-gradient(
-    rgba(0, 0, 0, 0.25),
-    rgba(0, 0, 0, 0.25)
-    ), url('../../res/image/food/sushi-sushi-rolly-vassabi-sous-imbir-set-japanese-food-pal-5.jpg');
-  filter: blur(.09vw); 
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.3)
+    ), url('../../res/image/culture/lex-joosen-concept-art-final.jpg');
+  filter: blur(.1vw); 
   background-repeat: no-repeat;
   background-position: 0 0;
   z-index: -1;
+  
   background-size: cover;
 }
 
@@ -68,7 +69,9 @@ header {
 }
 
 #page-title {
-    text-align: center;
+  font-size: 5vh;
+  font-weight: bold;
+  text-align: center;
 }
 
 #carte {
@@ -95,14 +98,20 @@ header {
 }
 
 .specialite-title {
-    font-size: 2vw;
-    text-align: center;
-    background-color: rgba(255,255,255,.3);
-    border: solid .05vh grey;
+  color: black;
+  font-weight: bold;
+  font-size: 2vw;
+  text-align: center;
+  background-color: rgba(255,255,255,.7);
+  border: solid .05vh grey;
 }
+
 .specialite-menu {
-    text-align: center;
-    border: solid .05vh white;
+  font-size: 2vh;
+  text-align: center;
+  border: solid .05vh white;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(94, 94, 94, 0.5));
+  backdrop-filter: blur(.3vw);
 
 }
 
