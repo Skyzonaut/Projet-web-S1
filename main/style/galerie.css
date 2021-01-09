@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+:root {
+  --overlay-color: rgba(34, 34, 34, 0.90);
+  --menu-speed: 1.25s;
+}
+  
+body, html {
+  min-height: 100%;
+  min-width: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  color: white;
+  scroll-behavior: smooth;
+}
+
+#page {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.15));
+  height: 8vh;
+}
+
+#bg-image {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.4)
+    ), url('../../res/image/culture/kabuki_theater.jpg');
+  filter: blur(.08vw); 
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  z-index: -1;
+  background-size: cover;
+}
+
+#page > h1 {
+  width: 100%;
+  text-align: center;
+  letter-spacing: .3vw;
+  font-size: 5vh;
+  font-weight: 30;
+}
+#galery {
+  /* border: double 1.5vh black; */
+  margin: 0vh 5vw 0 5vw;
+  /* backdrop-filter: blur(.5vw); */
+  height: 62%;
+  overflow-x: scroll;
+  padding: 1vh;
+  display: flex;
+  flex-wrap: nowrap;
+  scrollbar-width: thin;
+  box-shadow: inset;
+}
+
+#galery::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2px rgba(71, 71, 71, 0.3);
+}
+
+#galery::-webkit-scrollbar {
+	width: 3px;
+}
+
+#galery::-webkit-scrollbar-thumb {
+  height: 1px;
+	background-color: #464646;
+}
+
+#galery > .galery-item {
+  margin-left: 1vh;
+  padding: 1vh;
+  padding-top: 0vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#galery > .galery-item > .galery-item-title {
+  display: inline;
+  overflow: hidden; 
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 1.5vh;
+  font-size: 2vw;
+}
+
+#galery > .galery-item > .galery-item-img {
+  background-size: cover;
+  border: solid rgb(32, 32, 32) 3px;
+  width: 50vw;
+  height: 95%;
+}
+
+footer {
+  font-family: 'Playfair Display', serif;
+  font-size: 1vh;
+  text-align: center;
+  color: white;
+  position: fixed;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  bottom: 0;
+}
+
+footer ul {
+  display: inline-block;
+  padding: 2vh 2vh 1vh;
+  border-top: 1px solid white;
+}
+
+.fa, .fab {
+  padding: 2vh;
+  font-size: 4vh;
+  width: 5vh;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover, .fab:hover {
+  opacity: 0.7;
+}
+
+
+@media screen and (orientation: portrait) {
+  .pageTitle {
+      font-size: 5vh;
+  }
+  footer {
+      font-size: 4vh;
+  }
+  footer ul {
+      display: inline-block;
+      padding: 1vh 1vh 0.5vh;
+      border-top: 1px solid white;
+  }
+  
+  #galery {
+    /* border: double 1.5vh black; */
+    margin: 0vh 5vw 0 5vw;
+    /* backdrop-filter: blur(.5vw); */
+    height: 62%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 1vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    scrollbar-width: thin;
+  }
+  #galery > .galery-item  {
+    height: 50vh;
+  }
+
+  
+#galery > .galery-item > .galery-item-title {
+  font-size: 4vw;
+}
+
+  #galery > .galery-item > .galery-item-img {
+    background-size: cover;
+    border: solid rgb(32, 32, 32) 3px;
+    width: 100%;
+  }
+}
