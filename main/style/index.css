@@ -19,7 +19,9 @@ body, html {
 }
 
 header {
-  background: linear-gradient(rgba(73, 73, 73, .15), rgba(0, 0, 0, 0.05));
+  background: linear-gradient(rgba(73, 73, 73, .15), rgba(0, 0, 0, 0.05));  
+  height: 10vh;
+  
 }
 
 #bg-image {
@@ -61,18 +63,10 @@ header {
   overflow-y: scroll;
   scrollbar-width: none;
 }
-.main-content > #page-title {
-  color: rgb(255, 255, 255);
-  font-size: 4vh;
-  text-align: center;
-  margin-top: 12vh;
-  margin-bottom: 6vh;
-  height: fit-content;
-  letter-spacing: .2vh;
-}
 
 .main-content > #adress {
   color: rgb(255, 255, 255);
+  margin-top: 25vh;
   font-size: 1.5vh;
   text-align: center;
   font-style: italic;
@@ -141,20 +135,20 @@ nav {
   top: 1000px;
   height: auto;
   text-shadow: 19px 14px 30px rgba(0, 0, 0, 1);
-  font-size: 3.5vh;
+  font-size: 2.5vh;
   line-height: 5vh;
   letter-spacing: .1vw;
   height: 100%;
 }
 
 #presentation > p {
-  padding: 3vh;
+  padding: 10vh;
   margin-block-start: 0px;
   margin-block-end: 0px;
   /* backdrop-filter: brightness(.6); */
   border-radius: 15vh;
   text-align: center;
-  backdrop-filter: blur(.2vh);
+  backdrop-filter: blur(.25vh);
   text-shadow: 2px 2px 2px rgba(206,89,55,0);
 }
 
