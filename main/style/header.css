@@ -93,6 +93,7 @@
     letter-spacing: .2vh;
   }
 
+
 header {
   font-size: 1.5vh;
   font-family: 'Playfair Display', serif;
@@ -106,8 +107,19 @@ header {
   display: flex;
 }
 
+
+.logo {
+  width:7vh;
+  height:7vh;
+  position: absolute;
+  margin-top:1vh;
+  left: 0.5vw;
+  top: 0.5vh;
+  
+}
+
 header > #header-menu {
-    margin-left: 1vw;
+    margin-left: 2vw;
     visibility: hidden;
     /* -webkit-transform: translateX(-100%); */
 }
