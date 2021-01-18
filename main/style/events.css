@@ -19,6 +19,10 @@ body, html {
     padding: 0;
     margin: 0;
 }
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
 
 #bg-image {
     height: 100%;
@@ -35,7 +39,16 @@ body, html {
     
     background-size: cover;
   }
-
+  
+  #page {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    overflow-y: scroll;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+  }
   
 header {
     background: linear-gradient(rgba(73, 73, 73, .15), rgba(0, 0, 0, 0.05));
@@ -56,11 +69,12 @@ header {
 }
 
 #nav-container {
-    margin-top: 5vh;
+    margin-top: 2vh;
     margin-left: 1vw;
     margin-right: 1vw;
     margin-bottom: 1vh;
-    height: inherit;
+    height: 60vh;
+    /* height: inherit; */
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -141,6 +155,15 @@ footer {
 @media screen and (orientation: portrait) {
     .pageTitle {
         font-size: 5vh;
+    }
+
+    #nav-container {
+      flex-direction: column;
+      overflow-y: auto;
+    }
+
+    .nav-container-column {
+      flex-direction: column;
     }
     form {
         width: 75%;
