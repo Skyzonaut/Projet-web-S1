@@ -21,7 +21,6 @@ body, html {
     rgba(0, 0, 0, 0.25),
     rgba(0, 0, 0, 0.25)
     ), url('../../res/image/culture/pexels-aleksandar-pasaric-2506923_sombre.jpg');
-    filter: blur(.09vw); 
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: cover;
