@@ -20,7 +20,7 @@
                     <ul>
                         <li><a href="./index.html">Home</a></li>
                         <li><a href="./galerie.html">Galerie</a></li>
-                        <li><a href="./menu.html">Réstauration</a></li>
+                        <li><a href="./menu.html">Restauration</a></li>
                         <li><a href="./events.html">Événements</a></li>
                     </ul>
                 </div>
@@ -67,9 +67,9 @@
             var minutes = date.getMinutes();
             var seconds = date.getSeconds();
             if (minutes < 10) minutes = "0" + minutes;
-            if (seconds < 10) seconds = "0" + seconds;
+            // if (seconds < 10) seconds = "0" + seconds;
             if (hours < 10) hours = "0" + hours;       
-            var time = hours + ":" + minutes + ":" + seconds;
+            var time = hours + ":" + minutes; // + ":" + seconds;
             document.getElementById("date").value = today;
             document.getElementById("time").value = time;
         </script>
