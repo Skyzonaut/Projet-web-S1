@@ -80,17 +80,18 @@
 
   #entete-page-title {
     color: rgb(255, 255, 255);
-    padding: 1vh;
+    padding: 1.5vh;
+    margin-top: .5vh;
     top: 0;
     left: 0;
     z-index: -1;
     position: absolute;
-    font-size: 4vh;
+    font-size: 3vh;
     text-align: center;
     width: 100vw;
     /* margin-bottom: 6vh; */
     /* height: fit-content; */
-    letter-spacing: .2vh;
+    letter-spacing: .5vh;
   }
 
 
