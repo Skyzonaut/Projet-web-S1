@@ -80,18 +80,20 @@
 
   #entete-page-title {
     color: rgb(255, 255, 255);
-    padding: 1vh;
+    padding: 1.5vh;
+    margin-top: .5vh;
     top: 0;
     left: 0;
     z-index: -1;
     position: absolute;
-    font-size: 4vh;
+    font-size: 3vh;
     text-align: center;
     width: 100vw;
     /* margin-bottom: 6vh; */
     /* height: fit-content; */
-    letter-spacing: .2vh;
+    letter-spacing: .5vh;
   }
+
 
 header {
   font-size: 1.5vh;
@@ -106,8 +108,19 @@ header {
   display: flex;
 }
 
+
+.logo {
+  width:7vh;
+  height:7vh;
+  position: absolute;
+  margin-top:1vh;
+  left: 0.5vw;
+  top: 0.5vh;
+  
+}
+
 header > #header-menu {
-    margin-left: 1vw;
+    margin-left: 2vw;
     visibility: hidden;
     /* -webkit-transform: translateX(-100%); */
 }
